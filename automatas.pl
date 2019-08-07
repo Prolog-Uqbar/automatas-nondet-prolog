@@ -18,6 +18,8 @@ M = ({A, B, C, D}, {a, b}, δ, A, {B}), where δ is given as;
 δ (D, b) = B.
 
 */
+
+% transicion: nodo origen -> nodo destino, caracter
 transicion(a, c, a).
 transicion(a, b, a).
 transicion(a, d, a).
@@ -25,6 +27,7 @@ transicion(d, b, b).
 transicion(c, b, b).
 transicion(c, a, b).
 
+% nodos
 nodo(a).
 nodo(b).
 nodo(c).
@@ -35,9 +38,9 @@ nodo(d).
    es parte de lo que el negocio determina, no se pueden inferir
 */
 inicial(a).
-
 final(b).
 
+% Verifica si una palabra pertenece al lenguaje
 parsear(Palabra):-inicial(NodoInicial), parsear(Palabra, NodoInicial).
 
 parsear([], Final):-final(Final).
