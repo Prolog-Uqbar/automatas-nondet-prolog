@@ -41,15 +41,15 @@ inicial(1).
 final(2).
 
 % Verifica si una palabra pertenece al lenguaje
-parsear(Palabra):-inicial(NodoInicial), parsear(Palabra, NodoInicial).
+esValida(Palabra):-inicial(EstadoInicial), parsear(Palabra, EstadoInicial).
 
 parsear([], Final):-final(Final).
-parsear([Caracter|RestoPalabra], Nodo):-
-    transicion(Nodo, Caracter, Siguiente),
+parsear([Caracter|RestoPalabra], Estado):-
+    transicion(Estado, Caracter, Siguiente),
     % write('caracter '),
     % write(Caracter),
     % write(' | δ '),
-    % write(Nodo),
+    % write(Estado),
     % write(' => '),
     % writeln(Siguiente),
     parsear(RestoPalabra, Siguiente).
