@@ -19,13 +19,13 @@ M = ({A, B, C, D}, {a, b}, δ, A, {B}), where δ is given as;
 
 */
 
-% transicion: nodo origen -> nodo destino, caracter
-transicion(1, 3, a).
-transicion(1, 2, a).
-transicion(1, 4, a).
-transicion(4, 2, b).
-transicion(3, 2, b).
-transicion(3, 1, b).
+% transicion: nodo origen --caracter--> nodo destino
+transicion(1, a, 3).
+transicion(1, a, 2).
+transicion(1, a, 4).
+transicion(4, b, 2).
+transicion(3, b, 2).
+transicion(3, b, 1).
 
 % nodos
 nodo(1).
@@ -45,7 +45,7 @@ parsear(Palabra):-inicial(NodoInicial), parsear(Palabra, NodoInicial).
 
 parsear([], Final):-final(Final).
 parsear([Caracter|RestoPalabra], Nodo):-
-    transicion(Nodo, Siguiente, Caracter),
+    transicion(Nodo, Caracter, Siguiente),
     % write('caracter '),
     % write(Caracter),
     % write(' | δ '),
