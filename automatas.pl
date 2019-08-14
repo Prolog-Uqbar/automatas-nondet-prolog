@@ -9,13 +9,13 @@
 
 /** Definición del lenguaje 
 
-M = ({A, B, C, D}, {a, b}, δ, A, {B}), where δ is given as;
-δ (A, a) = B,
-δ (A, a) = C,
-δ (A, a) = D,
-δ (C, b) = A,
-δ (C, b) = B,
-δ (D, b) = B.
+M = ({1, 2, 3, 4}, {a, b}, δ, 1, {2}), where δ is given as;
+δ (1, a) = 2,
+δ (1, a) = 3,
+δ (1, a) = 4,
+δ (3, b) = 1,
+δ (4, b) = 2,
+δ (5, b) = 2.
 
 */
 
