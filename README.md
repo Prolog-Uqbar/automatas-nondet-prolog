@@ -5,14 +5,14 @@
 
 Queremos resolver mediante un AFN [este ejemplo](https://er.yuvayana.org/nfa-nondeterministic-finite-automata-definition-example-application/)
 
-M = ({A, B, C, D}, {a, b}, δ, A, {B}), donde δ es definido como
+M = ({1, 2, 3, 4}, {a, b}, δ, 1, {2}), donde δ es definido como
 
-- δ (A, a) = B,
-- δ (A, a) = C,
-- δ (A, a) = D,
-- δ (C, b) = A,
-- δ (C, b) = B,
-- δ (D, b) = B.
+- δ (1, a) = 2,
+- δ (1, a) = 3,
+- δ (1, a) = 4,
+- δ (3, b) = 1,
+- δ (3, b) = 2,
+- δ (4, b) = 2.
 
 ![image](images/NFAs-state-diagram.jpg)
 
