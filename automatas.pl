@@ -38,12 +38,12 @@ nodo(4).
    es parte de lo que el negocio determina, no se pueden inferir
 */
 inicial(1).
-final(2).
+final([2]).
 
 % Verifica si una palabra pertenece al lenguaje
 esValida(Palabra):-inicial(EstadoInicial), parsear(Palabra, EstadoInicial).
 
-parsear([], Final):-final(Final).
+parsear([], Final):-final(NodosFinales), member(Final,NodosFinales).
 parsear([Caracter|RestoPalabra], Estado):-
     transicion(Estado, Caracter, Siguiente),
     % write('caracter '),
