@@ -3,6 +3,11 @@
 
 [![Build](https://github.com/pdep-utn/eg-automatas-nondet-prolog/actions/workflows/workflow.yml/badge.svg)](https://github.com/pdep-utn/eg-automatas-nondet-prolog/actions/workflows/workflow.yml)
 
+## Link a las diapositivas de la clase
+
+[Diapositivas](https://docs.google.com/presentation/d/1HLZkuw_BLXJ-MVTC7Bg9Up-xpzZQ8is90FVlNWATdhM/edit#slide=id.p)
+## Enunciado
+
 Queremos resolver mediante un AFN [este ejemplo](https://er.yuvayana.org/nfa-nondeterministic-finite-automata-definition-example-application/)
 
 M = ({1, 2, 3, 4}, {a, b}, δ, 1, {2}), donde δ es definido como
