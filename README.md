@@ -1,7 +1,7 @@
 
 # Autómatas finitos no determinísticos
 
-[![Build Status](https://travis-ci.com/pdep-utn/eg-automatas-nondet-prolog.svg?branch=master)](https://travis-ci.com/pdep-utn/eg-automatas-nondet-prolog)
+[![Build](https://github.com/pdep-utn/eg-automatas-nondet-prolog/actions/workflows/workflow.yml/badge.svg)](https://github.com/pdep-utn/eg-automatas-nondet-prolog/actions/workflows/workflow.yml)
 
 Queremos resolver mediante un AFN [este ejemplo](https://er.yuvayana.org/nfa-nondeterministic-finite-automata-definition-example-application/)
 
