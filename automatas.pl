@@ -34,14 +34,14 @@ nodo(3).
 nodo(4).
 
 /* 
-   Los nodos inicial y final se determinan con hechos,
+   Los estados inicial y finales se determinan con hechos,
    es parte de lo que el negocio determina, no se pueden inferir
 */
-inicial(1).
-final([2]).
+estadoInicial(1).
+estadosFinales([2]).
 
 % Verifica si una palabra pertenece al lenguaje
-esValida(Palabra):-inicial(EstadoInicial), parsear(Palabra, EstadoInicial).
+esValida(Palabra):-estadoInicial(EstadoInicial), parsear(Palabra, EstadoInicial).
 
 parsear([], Final):-nodoFinal(Final).
 parsear([Caracter|RestoPalabra], Estado):-
@@ -55,5 +55,5 @@ parsear([Caracter|RestoPalabra], Estado):-
     parsear(RestoPalabra, Siguiente).
 
 nodoFinal(Nodo):-
-  final(NodosFinales),
+  estadosFinales(NodosFinales),
   member(Nodo,NodosFinales).
