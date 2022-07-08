@@ -6,6 +6,12 @@
 ## Link a las diapositivas de la clase
 
 [Diapositivas](https://docs.google.com/presentation/d/1HLZkuw_BLXJ-MVTC7Bg9Up-xpzZQ8is90FVlNWATdhM/edit#slide=id.p)
+
+
+## Link al video con la explicación
+
+[Video de youtube](https://youtu.be/HmpzslJozJM)
+
 ## Enunciado
 
 Queremos resolver mediante un AFN [este ejemplo](https://er.yuvayana.org/nfa-nondeterministic-finite-automata-definition-example-application/)
