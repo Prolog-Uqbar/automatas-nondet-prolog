@@ -19,7 +19,7 @@ M = ({1, 2, 3, 4}, {a, b}, δ, 1, {2}), where δ is given as;
 
 */
 
-% transicion: nodo origen --caracter--> nodo destino
+% transicion: estado origen --Token--> estado destino
 transicion(1, a, 3).
 transicion(1, a, 2).
 transicion(1, a, 4).
@@ -27,11 +27,11 @@ transicion(4, b, 2).
 transicion(3, b, 2).
 transicion(3, b, 1).
 
-% nodos
-nodo(1).
-nodo(2).
-nodo(3).
-nodo(4).
+% estados
+estado(1).
+estado(2).
+estado(3).
+estado(4).
 
 /* 
    Los estados inicial y finales se determinan con hechos,
@@ -43,13 +43,13 @@ estadoFinal(2).
 % Verifica si una palabra pertenece al lenguaje
 esValida(Palabra):-estadoInicial(EstadoInicial), parsear(Palabra, EstadoInicial).
 
-parsear([], Final):-estadoFinal(Final).
-parsear([Caracter|RestoPalabra], Estado):-
-    transicion(Estado, Caracter, Siguiente),
-    % write('caracter '),
-    % write(Caracter),
+parsear([], Estado):-estadoFinal(Estado).
+parsear([Token|Tokens], Estado):-
+    transicion(Estado, Token, EstadoSiguiente),
+    % write('Token '),
+    % write(Token),
     % write(' | δ '),
     % write(Estado),
     % write(' => '),
     % writeln(Siguiente),
-    parsear(RestoPalabra, Siguiente).
+    parsear(Tokens, EstadoSiguiente).
