@@ -1,7 +1,7 @@
 
 # Autómatas finitos no determinísticos
 
-[![Build](https://github.com/pdep-utn/eg-automatas-nondet-prolog/actions/workflows/workflow.yml/badge.svg)](https://github.com/pdep-utn/eg-automatas-nondet-prolog/actions/workflows/workflow.yml)
+[![Build](https://github.com/Prolog-Uqbar/automatas-nondet-prolog/actions/workflows/workflow.yml/badge.svg)](https://github.com/Prolog-Uqbar/automatas-nondet-prolog/actions/workflows/workflow.yml)
 
 ## Link a las diapositivas de la clase
 
