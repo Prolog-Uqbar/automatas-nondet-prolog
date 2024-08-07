@@ -15,8 +15,8 @@ jobs:
           sudo apt-get install swi-prolog-nox
       - name: Run tests
         run: | 
-          if [ 0 == `find *.pl | wc -l` ] ; then
+          if [ 0 == `find test_*.pl | wc -l` ] ; then
             echo "No hay archivos Prolog en tu solución"
             exit 1
           fi
-          find *.pl | xargs -I{} swipl -s {} -g run_tests,halt -t 'halt(1)'
+          find test_*.pl | xargs -I{} swipl -s {} -g run_tests,halt -t 'halt(1)'
